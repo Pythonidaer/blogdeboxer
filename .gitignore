@@ -1,1 +1,25 @@
 /vendor/
+
+# Ignore Drupal core files
+/web/core/
+
+# Ignore contributed modules and themes
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+
+# Track custom modules, themes, and profiles
+!/web/modules/custom/
+/web/themes/custom/
+/web/profiles/custom/
+
+# Ignore sites folder settings and files
+/web/sites/*/settings.php
+/web/sites/*/services.yml
+/web/sites/*/files/
+
+# Track config sync files
+!/web/sites/default/files/config_HASH/sync/
+
+# Ignore temporary files
+/tmp
